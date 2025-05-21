@@ -2,8 +2,41 @@
 <html>
 <head>
     <title>Hello Page</title>
+    <style>
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            margin: 20px 0;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 50%;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
     <h1><s>Coming soon.</s></h1>
+
+    <h2>I have left the project. This is the last demo I worked on.</h2>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/hnhyqdBK3TA" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+        </iframe>
+    </div>
 </body>
 </html>
